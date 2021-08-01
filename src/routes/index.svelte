@@ -1,4 +1,4 @@
-<main class="dark:text-white">
+<main>
 	<h1>Factory Planner</h1>
 	<p>New</p>
 	<p>Open</p>

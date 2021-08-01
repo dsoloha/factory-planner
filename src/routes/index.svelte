@@ -1,2 +1,6 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main class="dark:text-white">
+	<h1>Factory Planner</h1>
+	<p>New</p>
+	<p>Open</p>
+	<p>Load</p>
+</main>

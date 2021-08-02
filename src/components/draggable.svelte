@@ -15,7 +15,7 @@
 		}
 	}
 
-	function onMouseUp() {
+	function onMouseUp(): void {
 		moving = false;
 	}
 </script>

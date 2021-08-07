@@ -2,16 +2,13 @@
 	"name": "factory-planner",
 	"version": "0.0.1",
 	"scripts": {
-    "dev:only": "svelte-kit dev",
-    "build:only": "svelte-kit build",
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
     "preview": "svelte-kit preview",
-    "tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
-    "tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production  postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
-    "dev": "concurrently \"yarn run dev:only\" \"yarn run tailwind:watch\"",  "build": "yarn run tailwind:build && yarn run build:only",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write --plugin-search-dir=. ."
+	"check": "svelte-check --tsconfig ./tsconfig.json",
+	"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+	"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+	"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "*",
@@ -39,7 +36,6 @@
 	"type": "module",
 	"dependencies": {
 		"autoprefixer": "^10.3.1",
-		"postcss-import": "^14.0.2",
-		"tailwindcss": "^2.2.7"
+		"postcss-import": "^14.0.2"
 	}
 }

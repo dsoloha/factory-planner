@@ -5,4 +5,4 @@
 	<a href="/settings/notifications">Notifications</a>
 </div>
 
-<slot></slot>
+<slot />

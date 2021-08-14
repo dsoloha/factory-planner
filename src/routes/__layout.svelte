@@ -4,4 +4,4 @@
 	<a href="settings">Settings</a>
 </nav>
 
-<slot></slot>
+<slot />

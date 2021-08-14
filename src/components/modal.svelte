@@ -1,9 +1,9 @@
 <script context="module" lang="ts">
-	let onTop; //keeping track of which open modal is on top
-	const modals = {}; //all modals get registered here for easy future access
+	let onTop; // keeping track of which open modal is on top
+	const modals = {}; // all modals get registered here for easy future access
 
 	// 	returns an object for the modal specified by `id`, which contains the API functions (`open` and `close` )
-	export function getModal(id = '') {
+	export function getModal(id = ''): unknown {
 		return modals[id];
 	}
 </script>
@@ -19,7 +19,7 @@
 	export let id = '';
 
 	function keyPress(ev) {
-		//only respond if the current modal is the top one
+		// only respond if the current modal is the top one
 		if (ev.key == 'Escape' && onTop == topDiv) close(); //ESC
 	}
 
@@ -58,7 +58,12 @@
 </script>
 
 <div id="topModal" class:visible bind:this={topDiv} on:click={() => close()}>
-	<div id="modal" on:click|stopPropagation={() => {}}>
+	<div
+		id="modal"
+		on:click|stopPropagation={() => {
+			return;
+		}}
+	>
 		<svg id="close" on:click={() => close()} viewBox="0 0 12 12">
 			<circle cx="6" cy="6" r="6" />
 			<line x1="3" y1="3" x2="9" y2="9" />

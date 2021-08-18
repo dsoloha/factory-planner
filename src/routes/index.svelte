@@ -1,3 +1,7 @@
+<svelte:head>
+	<link rel="stylesheet" href="../src/styles/main.css">
+</svelte:head>
+
 <script>
 	import Draggable from '../components/draggable.svelte';
 </script>
@@ -7,12 +11,3 @@
 
 	<Draggable>Drag Me</Draggable>
 </main>
-
-<style>
-	@media (prefers-color-scheme: dark) {
-		:root {
-			background-color: black;
-			color: white;
-		}
-	}
-</style>

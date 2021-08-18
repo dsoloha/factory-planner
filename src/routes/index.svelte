@@ -7,3 +7,12 @@
 
 	<Draggable>Drag Me</Draggable>
 </main>
+
+<style>
+	@media (prefers-color-scheme: dark) {
+		:root {
+			background-color: black;
+			color: white;
+		}
+	}
+</style>

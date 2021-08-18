@@ -1,3 +1,7 @@
+<svelte:head>
+	<link rel="stylesheet" href="../src/styles/main.css">
+</svelte:head>
+
 <script>
 	import Draggable from '../components/draggable.svelte';
 </script>

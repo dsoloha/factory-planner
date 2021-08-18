@@ -2,13 +2,13 @@
 	"name": "factory-planner",
 	"version": "0.0.1",
 	"scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "preview": "svelte-kit preview",
-	"check": "svelte-check --tsconfig ./tsconfig.json",
-	"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-	"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-	"format": "prettier --write --plugin-search-dir=. ."
+		"dev": "svelte-kit dev",
+		"build": "svelte-kit build",
+		"preview": "svelte-kit preview",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "*",

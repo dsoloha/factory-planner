@@ -1,5 +1,10 @@
-<nav>
-	<a href=".">Home</a>
-</nav>
+<header>
+	<nav>
+		<a href=".">Home</a>
+	</nav>
+</header>
 
 <slot />
+
+<footer>
+</footer>
